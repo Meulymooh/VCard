@@ -89,7 +89,7 @@ p {
 
 .main-div
 {
-  position: absolute;
+  position: fixed;
   margin: auto;
   top: 0;
   right: 0;
@@ -105,8 +105,8 @@ p {
 .left-div
 {
 	float: left;
-	width: 400px;
-	position: relative;
+	width: 20%
+	position: absolute;
 	margin: auto;
 	border-color: black;
 	top: 70%;
@@ -114,25 +114,39 @@ p {
 	font-color: none;
 }
 
+#left {
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
 .right-div
 {
 	float: right;
-	width: 400px;
+	width: 50%;
 	position: relative;
 	margin: auto;
 	border-color: black;
 	top 40%;
 	line-height: 0.5;
 	font-color: white;
+	vertical-align: middle;
 }
 
-.central-div
-{
-	float: center;
-	width: 400px;
+div.image {
+   content:url(http://theramiro.com/gallery/Furniture-Ideas-14-Modern-Wood-Chairs-For-Your-Dining-Room.jpg);
+   float: right;
+	width: 30%;
 	position: relative;
-	content:url(https://images-na.ssl-images-amazon.com/images/I/71qK-JrrAGL._SY606_.jpg);
-}
+	margin: auto;
+	border-color: black;
+	top 40%;
+	line-height: 0.5;
+	font-color: white;
+	padding-right: 20px;
+}​
+
+
 
 /* links */
 
@@ -143,7 +157,7 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: #e67e00;
+  color: hotpink;
 }
 
 /* mouse over link */
@@ -170,7 +184,7 @@ a:active {
 
 <div class="main-div" id="wrapper">
 
-	<div class="left-div">
+	<div class="left-div" id="left">
 		<h3> Contact details</h3><br />
 
 		<h4><b>Address:</b></h4>
@@ -184,12 +198,13 @@ a:active {
 
 	</div>
 
-	<div class="right-div">
+	<div class="right-div" id="right">
 		<h1><b>Emilie Mesureur</b></h1>
 		<h3>Junior Web Developer</h3>
 	</div>
 
-	<div class="central-div">
+	<div class="image" id="central"></div>
+
 
 
 	
