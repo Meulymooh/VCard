@@ -43,6 +43,7 @@ p {
 .left-div p
 {
 	color: white;
+	font-size: small;
 }
 
 .left-div h1
@@ -58,11 +59,13 @@ p {
 .left-div h3
 {
 	color: white;
+	font-size: medium;
 }
 
 .left-div h4
 {
 	color: white;
+	font-size: small;
 }
 
 .right-div h1
@@ -76,6 +79,13 @@ p {
 }
 
 /* blocks */
+
+.header
+{
+    font-family:"HelveticaNeue-Light", "Arial";
+    font-size: 75%;
+    text-align:left;
+}
 
 .main-div
 {
@@ -108,7 +118,7 @@ p {
 {
 	float: right;
 	width: 400px;
-	position: relarive;
+	position: relative;
 	margin: auto;
 	border-color: black;
 	top 40%;
@@ -116,13 +126,35 @@ p {
 	font-color: white;
 }
 
-.header
+.central-div
 {
-    font-family:"HelveticaNeue-Light", "Arial";
-    font-size: 75%;
-    text-align:left;
+	float: center;
+	width: 400px;
+	position: relative;
+	content:url(https://images-na.ssl-images-amazon.com/images/I/71qK-JrrAGL._SY606_.jpg);
 }
 
+/* links */
+
+ /* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: #e67e00;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: white;
+} 
 
 </style>
 </head>
@@ -148,13 +180,18 @@ p {
 		<p>0472.74.44.62</p>
 
 		<h4><b>Email:</b></h4>
-		<p>mesureur.e@gmail.com</p>
+		<p><a href="mailto:mesureur.e@gmail.com">mesureur.e@gmail.com</p> </a>
+
 	</div>
 
 	<div class="right-div">
 		<h1><b>Emilie Mesureur</b></h1>
 		<h3>Junior Web Developer</h3>
 	</div>
+
+	<div class="central-div">
+
+
 	
 
 </div>
