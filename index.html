@@ -7,10 +7,31 @@ body {
 
 /* Fonts */
 
-h2 {
-  color: white;
-  font-family: "Tahoma", Geneva, sans-serif;
+h1 {
+	color: black;
+    font-family: "Tahoma", Geneva, sans-serif;
 }
+
+h2 {
+	color: white;
+    font-family: "Tahoma", Geneva, sans-serif;
+}
+
+h3 {
+	color: black;
+    font-family: "Tahoma", Geneva, sans-serif;
+}
+
+
+h4 {
+	color: black;
+    font-family: "Tahoma", Geneva, sans-serif;
+}
+
+
+h5 {
+	color: black;
+    font-family: "Tahoma", Geneva, sans-serif;
 }
 
 p {
@@ -30,8 +51,33 @@ p {
   left: 0;
   width: 90%;
   height: 80%;
-  background-color: white;
+  background-color: none;
   border-radius: 3px;
+  padding: 10px;
+}
+
+.left-div
+{
+	float: left;
+	width: 400px;
+	position: relative;
+	margin: auto;
+	border-color: black;
+	top: 70%;
+	line-height: 0.5;
+	font-color: none;
+}
+
+.right-div
+{
+	float: right;
+	width: 400px;
+	position: relarive;
+	margin: auto;
+	border-color: black;
+	top 40%;
+	line-height: 0.5;
+	font-color: white;
 }
 
 .header
@@ -53,11 +99,26 @@ p {
 
 <header><h2>My vCard</header>
 
-<div class="main-div">
+<div class="main-div" id="wrapper">
 
+	<div class="left-div">
+		<h3> Contact details</h3>
+
+		<h4><b>Address:</b></h4>
+		<p>Maaltebruggestraat 66 - 9000 Gent</p>
+
+		<h4><b>Tel.:</b></h4>
+		<p>0472.74.44.62</p>
+
+		<h4><b>Email:</b></h4>
+		<p>mesureur.e@gmail.com</p>
+	</div>
+
+	<div class="right-div">
+		<h1><b>Emilie Mesureur</b></h1>
+		<h3>Junior Web Developer</h3>
+	</div>
 	
-	
-<p>bla bla</p>
 
 </div>
 </html>
