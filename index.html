@@ -1,8 +1,12 @@
 <head>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 <style>
 
 body {
     background: linear-gradient(90deg,  #103459 35%, #FFFFFF 35%);
+  	width: 100%;
 }
 
 /* Fonts */
@@ -76,7 +80,11 @@ p {
 
 .main-div
 {
-  position: absolute;
+  order: 0;
+  display: flex; 
+  flex-direction: row;
+  position: relative;
+  min-width: 960px
   margin: auto;
   top: 0;
   right: 0;
@@ -91,12 +99,13 @@ p {
 
 .left-div
 {
+	order: 1;
 	float: left;
 	width: 20%
 	position: relative;
 	margin: auto;
 	border-color: black;
-	top:60%;
+	top:50%;
 	line-height: 0.5;
 	font-color: none;
 }
@@ -106,6 +115,15 @@ p {
   bottom: 0;
   left: 0;
 }
+
+.facebook {
+  padding: 50px 150px;
+  background-position: 5px 50%;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/267px-F_icon.svg.png");
+}
+
 
 /* links */
 
@@ -117,25 +135,27 @@ p {
 
 .right-div
 {
+	order: 3;
 	float: right;
 	width: 50%;
 	position: relative;
 	margin: auto;
 	border-color: black;
-	top 40%;
+	top 50%;
 	line-height: 0.5;
 	font-color: white;
 	vertical-align: middle;
 }
 
 div.image {
+   order: 2;
    content:url(https://www.splendidbeast.com/wp-content/uploads/2017/11/Princess-of-Wales-White-Cat-cropped-shrunk.jpg);
    float: right;
 	width: 30%;
 	position: relative;
 	margin: auto;
 	border-color: black;
-	top 40%;
+	top 50%;
 	line-height: 0.5;
 	font-color: white;
 	padding-right: 20px;
@@ -191,6 +211,8 @@ div.image {
 	<div class="image" id="central"></div>
 
 	<footer>
+
+	<a href="https://www.facebook.com/emilie.mesureur"> <i class="fab fa-facebook-square"></i>
 		
 	</footer>
 
