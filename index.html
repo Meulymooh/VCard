@@ -11,32 +11,26 @@ h1 {
 	color: black;
     font-family: "Tahoma", Geneva, sans-serif;
 }
-
 h2 {
 	color: white;
     font-family: "Tahoma", Geneva, sans-serif;
 }
-
 h3 {
-	color: black;
+	color: white;
     font-family: "Tahoma", Geneva, sans-serif;
 }
-
-
 h4 {
 	color: black;
     font-family: "Tahoma", Geneva, sans-serif;
 }
-
-
 h5 {
 	color: black;
     font-family: "Tahoma", Geneva, sans-serif;
 }
-
 p {
 	color: black;
     font-family: "Tahoma", Geneva, sans-serif;
+    line-height: 1.5;
 }
 
 
@@ -80,23 +74,16 @@ p {
 
 /* blocks */
 
-.header
-{
-    font-family:"HelveticaNeue-Light", "Arial";
-    font-size: 75%;
-    text-align:left;
-}
-
 .main-div
 {
-  position: fixed;
+  position: absolute;
   margin: auto;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   width: 90%;
-  height: 80%;
+  height: 70%;
   background-color: none;
   border-radius: 3px;
   padding: 10px;
@@ -106,10 +93,10 @@ p {
 {
 	float: left;
 	width: 20%
-	position: absolute;
+	position: relative;
 	margin: auto;
 	border-color: black;
-	top: 70%;
+	top:60%;
 	line-height: 0.5;
 	font-color: none;
 }
@@ -119,6 +106,14 @@ p {
   bottom: 0;
   left: 0;
 }
+
+/* links */
+
+#left a:link { color: white; }
+#left a:visited { color: hotpink; }
+#left a:hover { color: hotpink; }
+#left a:active { color: white; }
+
 
 .right-div
 {
@@ -134,7 +129,7 @@ p {
 }
 
 div.image {
-   content:url(http://theramiro.com/gallery/Furniture-Ideas-14-Modern-Wood-Chairs-For-Your-Dining-Room.jpg);
+   content:url(https://www.splendidbeast.com/wp-content/uploads/2017/11/Princess-of-Wales-White-Cat-cropped-shrunk.jpg);
    float: right;
 	width: 30%;
 	position: relative;
@@ -146,30 +141,6 @@ div.image {
 	padding-right: 20px;
 }​
 
-
-
-/* links */
-
- /* unvisited link */
-a:link {
-  color: white;
-}
-
-/* visited link */
-a:visited {
-  color: hotpink;
-}
-
-/* mouse over link */
-a:hover {
-  color: hotpink;
-}
-
-/* selected link */
-a:active {
-  color: white;
-} 
-
 </style>
 </head>
 
@@ -180,7 +151,7 @@ a:active {
 <html>
 
 
-<header><h2>My vCard</header>
+<header><h3>My vCard</h3></header>
 
 <div class="main-div" id="wrapper">
 
@@ -196,14 +167,32 @@ a:active {
 		<h4><b>Email:</b></h4>
 		<p><a href="mailto:mesureur.e@gmail.com">mesureur.e@gmail.com</p> </a>
 
+		<p>
+
 	</div>
 
 	<div class="right-div" id="right">
 		<h1><b>Emilie Mesureur</b></h1>
 		<h3>Junior Web Developer</h3>
+		<br />
+		<br />
+		<br />
+		<p><i>"Simplicity is the outcome of technical subtlety. It is the goal, not the starting point."</i>(Maurice Saatchi)</p> <br />
+
+<p>Web developer in the making, I'm also an experienced translator and content writer. I am currently following a training in web development with BeCode Ghent and will be available for a 3-month internship from September 2019.</p><br />
+
+<form>
+<input type="button" value="My CV" onclick="window.location.href='http://emilie.watlock.be/CV_Emilie.pdf'"/>
+</form> 
+
+
 	</div>
 
 	<div class="image" id="central"></div>
+
+	<footer>
+		
+	</footer>
 
 
 
