@@ -1,6 +1,7 @@
 <head>
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<!-- icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
 
@@ -105,16 +106,11 @@ p {
 	position: relative;
 	margin: auto;
 	border-color: black;
-	top:50%;
 	line-height: 0.5;
 	font-color: none;
+	vertical-align: bottom;
 }
 
-#left {
-  position: relative;
-  bottom: 0;
-  left: 0;
-}
 
 .facebook {
   padding: 50px 150px;
@@ -141,17 +137,16 @@ p {
 	position: relative;
 	margin: auto;
 	border-color: black;
-	top 50%;
 	line-height: 0.5;
 	font-color: white;
-	vertical-align: middle;
+	vertical-align: top;
 }
 
 div.image {
    order: 2;
    content:url(https://www.splendidbeast.com/wp-content/uploads/2017/11/Princess-of-Wales-White-Cat-cropped-shrunk.jpg);
    float: right;
-	width: 30%;
+	width: 20%;
 	position: relative;
 	margin: auto;
 	border-color: black;
@@ -160,6 +155,47 @@ div.image {
 	font-color: white;
 	padding-right: 20px;
 }​
+
+/* icons */
+
+.fa {
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  opacity: 1;
+  font-size: 30px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  font-size: 30px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  font-size: 30px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  font-size: 30px;
+  padding: 5px;
+  margin: 5px;
+}
 
 </style>
 </head>
@@ -185,8 +221,12 @@ div.image {
 		<p>0472.74.44.62</p>
 
 		<h4><b>Email:</b></h4>
-		<p><a href="mailto:mesureur.e@gmail.com">mesureur.e@gmail.com</p> </a>
-
+		<p><a href="mailto:mesureur.e@gmail.com">mesureur.e@gmail.com</p> </a><br />
+		<br />
+<a href="https://www.facebook.com/emilie.mesureur" class="fa fa-facebook"></a>
+<a href="https://twitter.com/RandomEmilie" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/belgianemilie/" class="fa fa-instagram" class="fa fa-instagram"></a>
+<a href="https://www.youtube.com/channel/UCmZOakNJ3BJP9tT5IobH94g?" class="fa fa-youtube"></a>
 		<p>
 
 	</div>
@@ -196,29 +236,14 @@ div.image {
 		<h3>Junior Web Developer</h3>
 		<br />
 		<br />
-		<br />
-		<p><i>"Simplicity is the outcome of technical subtlety. It is the goal, not the starting point."</i>(Maurice Saatchi)</p> <br />
+		<p><i>"Simplicity is the outcome of technical subtlety. It is the goal, not the starting point."</i></p> 
+		<p>~ Maurice Saatchi</p> <br />
 
-<p>Web developer in the making, I'm also an experienced translator and content writer. I am currently following a training in web development with BeCode Ghent and will be available for a 3-month internship from September 2019.</p><br />
-
-<form>
-<input type="button" value="My CV" onclick="window.location.href='http://emilie.watlock.be/CV_Emilie.pdf'"/>
-</form> 
-
-
+<p>Web developer in the making, I'm also an experienced translator and content writer. I am currently following a training in web development with BeCode Ghent, and will be available for a 3-month internship from September 2019.</p><br />
+<button onclick="location.href='http://emilie.watlock.be/CV_Emilie.pdf'" style="font-size:18px">My resume <i class="fa fa-file-pdf-o"></i></button>
 	</div>
 
 	<div class="image" id="central"></div>
-
-	<footer>
-
-	<a href="https://www.facebook.com/emilie.mesureur"> <i class="fab fa-facebook-square"></i>
-		
-	</footer>
-
-
-
-	
 
 </div>
 </html>
